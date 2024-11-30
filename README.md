@@ -11,6 +11,11 @@ getLogger().info("Jammand is enabled");
 ```
 getCommand("jammand").setExecutor(this);
 ```
+
+
+
+
+
 ## 이벤트 등록
 getServer().getPluginManager().registerEvents(this, this);
 
@@ -21,7 +26,17 @@ config.yml 있다면
 ```
 
 
-
+# plugin.yml
+```
+name: 
+version: 
+main: 
+description: A
+author: 
+website: 
+api-version:
+commands:
+```
 
 # command:
 
