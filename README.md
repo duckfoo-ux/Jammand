@@ -1,3 +1,14 @@
+# 구성
+```
+example-plugin
+└── src
+    └── main
+        ├── java
+        └── resources
+            ├── config.yml
+            └── plugin.yml
+```
+
 # 매인
 @Override
     public void onEnable() {
@@ -37,6 +48,27 @@ website:
 api-version:
 commands:
 ```
+
+# config.yml
+플러그인이 초기화되면 이 리소스를 플러그인의 데이터 디렉토리에 저장해야 사용자가 값을 편집할 수 있습니다. 플러그인에서 이를 수행하는 방법의 예는 다음과 같습니다 onEnable
+
+```
+public class TestPlugin extends JavaPlugin {
+
+    @Override
+    public void onEnable() {
+        saveResource("config.yml", /* replace */ false);
+
+        // You can also use this for configuration files:
+        saveDefaultConfig();
+        // Where the default config.yml will be saved if it does not already exist
+
+        // getConfig()...
+    }
+
+}
+```
+
 
 # command:
 
