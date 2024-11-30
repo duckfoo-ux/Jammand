@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Jammand_jar</output-path>
     <root id="archive" name="Jammand.jar">
       <element id="module-output" name="Jammand.main" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
     </root>
   </artifact>
 </component>
