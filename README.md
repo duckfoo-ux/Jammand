@@ -8,6 +8,8 @@ example-plugin
             ├── config.yml
             └── plugin.yml
 ```
+! 주의사항 !
+plugin.ymlㅣconfig.yml은  꼭 resources 파일안에 넣어두기
 
 # 매인
 @Override
@@ -170,23 +172,8 @@ ctrl+o 로 onCommand 추가 그리고 예시:
 plugin.yml에 추가 
 
 
-### plugin.yml전체 코드:
 
-```
-name: Jammand
-version: '1.0-SNAPSHOT'
-main: Jmmand.jammand
-api-version: '1.20'
-loader:
-commands:
-  Jammand:
-    description: Jammand
-  iv:
-    description: iv
-```
 
-# 주의사항
-plugin.ymlㅣconfig.yml은  꼭 resources 파일안에 넣어두기
 
 
  
