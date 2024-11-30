@@ -120,8 +120,10 @@ ctrl+o 로 onCommand 추가 그리고 예시:
 ```
 여기서 상자가 1번칸이 아니라 0번칸부터 시작 
 26칸의 상자를 열려면 27을 써주기 
-이것도 plugin.yml에 추가 
-전체 코드:
+plugin.yml에 추가 
+
+
+### plugin.yml전체 코드:
 
 ```
 name: Jammand
@@ -135,5 +137,9 @@ commands:
   iv:
     description: iv
 ```
+
+# 주의사항
+plugin.ymlㅣconfig.yml은  꼭 resources 파일안에 넣어두기
+
 
  
