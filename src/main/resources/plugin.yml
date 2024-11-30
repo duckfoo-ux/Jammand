@@ -1,0 +1,4 @@
+name: Jammand
+version: '1.0-SNAPSHOT'
+main: Jmmand.jammand
+api-version: '1.20'

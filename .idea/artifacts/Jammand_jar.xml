@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Jammand:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Jammand_jar</output-path>
+    <root id="archive" name="Jammand.jar">
+      <element id="module-output" name="Jammand.main" />
+    </root>
+  </artifact>
+</component>
