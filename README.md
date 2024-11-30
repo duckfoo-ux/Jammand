@@ -1,15 +1,6 @@
-# 구성
-```
-example-plugin
-└── src
-    └── main
-        ├── java
-        └── resources
-            ├── config.yml
-            └── plugin.yml
-```
-! 주의사항 !
-plugin.ymlㅣconfig.yml은  꼭 resources 파일안에 넣어두기
+![Java 17](https://img.shields.io/badge/Java-17-orange)
+![Maven Central](https://img.shields.io/badge/maven%20central-v3.1.7-blue)
+
 
 # 매인
 @Override
@@ -24,11 +15,6 @@ getLogger().info("Jammand is enabled");
 ```
 getCommand("jammand").setExecutor(this);
 ```
-
-
-
-
-
 ## 이벤트 등록
 getServer().getPluginManager().registerEvents(this, this);
 
@@ -39,37 +25,6 @@ config.yml 있다면
 ```
 
 
-# plugin.yml
-```
-name: 
-version: 
-main: 
-description: A
-author: 
-website: 
-api-version:
-commands:
-```
-
-# config.yml
-플러그인이 초기화되면 이 리소스를 플러그인의 데이터 디렉토리에 저장해야 사용자가 값을 편집할 수 있습니다. 플러그인에서 이를 수행하는 방법의 예는 다음과 같습니다 onEnable
-
-```
-public class TestPlugin extends JavaPlugin {
-
-    @Override
-    public void onEnable() {
-        saveResource("config.yml", /* replace */ false);
-
-        // You can also use this for configuration files:
-        saveDefaultConfig();
-        // Where the default config.yml will be saved if it does not already exist
-
-        // getConfig()...
-    }
-
-}
-```
 
 
 # command:
@@ -172,8 +127,23 @@ ctrl+o 로 onCommand 추가 그리고 예시:
 plugin.yml에 추가 
 
 
+### plugin.yml전체 코드:
 
+```
+name: Jammand
+version: '1.0-SNAPSHOT'
+main: Jmmand.jammand
+api-version: '1.20'
+loader:
+commands:
+  Jammand:
+    description: Jammand
+  iv:
+    description: iv
+```
 
+# 주의사항
+plugin.ymlㅣconfig.yml은  꼭 resources 파일안에 넣어두기
 
 
  
